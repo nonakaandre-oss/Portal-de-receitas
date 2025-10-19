@@ -1,0 +1,137 @@
+* {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===================== HEADER ===================== */
+.container {
+  background-color: #f2c335;
+  height: 10em;
+  display: flex;
+  justify-content: space-between; /* distribui logo, busca e ícone */
+  align-items: center; /* centraliza verticalmente */
+  padding: 0 2em; /* espaçamento lateral */
+}
+
+/* Logo */
+.logo {
+  height: 200px;
+  width: auto;
+}
+
+/* Ícone do usuário */
+.u-icon {
+  width: 60px;
+  height: 60px;
+  fill: #f28322;
+  border: 3px solid #f28322;
+  border-radius: 50%;
+  padding: 5px;
+  transition: all 0.3s ease;
+}
+
+.u-icon:hover {
+  fill: #f82a14;
+  border-color: #f82a14;
+  transform: scale(1.05);
+}
+
+/* ===================== BUSCA ===================== */
+.busca {
+  flex: 1:1;
+  max-width: 600px;
+  margin: 0 2em;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.form-control {
+  flex: 1;
+  padding: 0.6em 1em;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.btn {
+  background-color: #f28322;
+  color: white;
+  border: none;
+  padding: 0.6em 1.2em;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #f82a14;
+  transform: scale(1.05);
+}
+
+/* ===================== CARROSSEL ===================== */
+.carrossel-categorias {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.container-categorias {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 25px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container-categorias::-webkit-scrollbar {
+  display: none;
+}
+
+.categoria {
+  text-align: center;
+  flex: 0 0 auto;
+}
+
+.categoria a {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.categoria img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #eee;
+  transition: 0.3s;
+}
+
+.categoria a:hover img {
+  border-color: #ff7b00;
+}
+
+.categoria a:hover p {
+  color: #ff7b00;
+  font-weight: 600;
+}
+
+.categoria p {
+  margin-top: 8px;
+  font-weight: 500;
+  font-size: large;
+}
