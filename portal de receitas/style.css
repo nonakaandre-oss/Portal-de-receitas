@@ -40,7 +40,7 @@
 
 /* ===================== BUSCA ===================== */
 .busca {
-  flex: 1:1;
+  flex: 1 1;
   max-width: 600px;
   margin: 0 2em;
 }
@@ -52,7 +52,7 @@
 }
 
 .form-control {
-  flex: 1;
+  flex: 0;
   padding: 0.6em 1em;
   font-size: 1em;
   border: 1px solid #ccc;
@@ -81,7 +81,8 @@
 .carrossel-categorias {
   display: flex;
   justify-content: center;
-  padding: 30px;
+  margin: 1em;
+  padding: 2em;
 }
 
 .container-categorias {
@@ -135,3 +136,79 @@
   font-weight: 500;
   font-size: large;
 }
+/*===========Card pricipal==========*/
+.card{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 20px;
+/*background-color: #fdf2cb;
+border-radius: 12px;
+padding: 20px;
+box-shadow: 0 2px 10px #F8D765;*/
+margin: 30px;
+}
+.card-img{
+  width: 600px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.card-text{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+.card-text h1{
+  font-family: delius;
+  margin-bottom: 0.8em;
+  font-size: 3em;
+}
+.card-text h2{
+  text-align: center;
+  font-size: 1.6em;
+  color: #333;
+margin-bottom: 0.8em;
+}
+.card-text ul {
+  font-size: 20px;
+  margin-bottom: 15px;
+  line-height: 30px;
+  padding-left: 5%;
+  padding-right: 5%; 
+  list-style-position: inside;
+  text-align: center;
+  
+}
+.card-text li {
+  margin-bottom: 8px;
+}
+.card-text p{
+  font-size: 20px;
+  margin-bottom: 15px;
+  line-height: 30px;
+  padding-left: 5%;
+  padding-right: 5%; 
+  list-style-position: inside;
+  text-align: center;
+}
+.card-button{
+ background-color: #f28322;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #f82a14;
+  transform: scale(1.05);
+} 
+.card-text button{
+  align-self: center;
+}
+
+
